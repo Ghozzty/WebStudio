@@ -1,0 +1,145 @@
+.main-section-portfolio {
+    padding: 94px 0;
+  }
+  
+  .buttons-list {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttons-list__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  .buttons-list__button {
+    border: 0;
+    border-radius: 4px;
+    height: 38px;
+    padding: 6px 22px;
+  
+    color: $title-color;
+    background-color: $our-team-bgc;
+    cursor: pointer;
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+  
+    transition-property: color, background-color, box-shadow;
+    transition-timing-function: $function-time;
+    transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+    background-color: $accent-color;
+    color: $body-bgc;
+  
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  }
+  
+  /* 
+  
+  portfolio-expamles
+  
+  */
+  
+  /* grid  */
+  
+  .portfolio-expamles {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-expamles__item {
+    width: 370px;
+  
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+      }
+      
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+      }
+  }
+  
+  
+  /* 
+  card
+  */
+  
+  .portfolio-expamles__link {
+    text-decoration: none;
+    display: block;
+  
+    transition: box-shadow $transitionsProperty;
+
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  
+  }
+  
+  /*
+  in card 
+  */
+  
+  .portfolio-expamles__upper-area {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio-expamles__blue-card {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: $accent-opac;
+  
+    font-size: 18px;
+    line-height: 1.56;
+  
+    color: $body-bgc;
+  
+    transition: transform $transitionsProperty;
+  
+    padding: 63px 34px;
+
+    .portfolio-expamles__link:focus &,
+    .portfolio-expamles__link:hover & {
+    transform: translateY(-100%);
+    }
+  }
+  
+  
+  .portfolio-expamles__lower-area {
+    padding: 20px 24px;
+    border: 1px solid $border-col;
+    border-top: none;
+  }
+  
+  .portfolio-expamles__name-project {
+    margin-bottom: 4px;
+  
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  
+    color: $title-color;
+  }
+  
+  .portfolio-expamles__what-project {
+    font-size: 16px;
+    line-height: 1.88;
+  
+    color: $primary-text-color;
+  }

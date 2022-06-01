@@ -1,0 +1,144 @@
+.form-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-section__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    color: $title-color;
+  }
+  
+  .form-section__input-group {
+    position: relative;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .form-section__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  
+    color: $primary-text-color;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+  
+  .form-section__input {
+    height: 40px;
+    width: 100%;
+    padding: 0;
+    padding-left: 42px;
+  
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+  
+    transition: border $transitionsProperty;
+
+    &:focus {
+        border: 1px solid $accent-color;
+      }
+  }
+  
+
+  
+  .form-section__icon {
+    fill: $title-color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+  
+    transition: fill $transitionsProperty;
+
+    .form-section__input:focus + & {
+        fill: $accent-color;
+      }
+  }
+  
+
+  
+  .textarea {
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+
+    &:active,
+    &:focus {
+    outline: none;
+    }
+    &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    }
+
+  }
+
+  /* license */
+  
+  .form-section__license-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .form-section__label.license {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-section__license-checkbox {
+    appearance: none;
+    position: absolute;
+  }
+  
+  .form-section__checkbox-icon {
+    display: inline-block;
+    height: 15px;
+    width: 16px;
+  
+    border: 2px solid $title-color;
+    border-radius: 2px;
+    margin-right: 8px;
+  
+    transition-property: background-color, border-color, background-image;
+    transition-duration: 250ms;
+    transition-timing-function: $function-time;
+  }
+  
+  .form-section__license-checkbox:checked + .form-section__checkbox-icon {
+    background-color: $accent-color;
+    background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z" fill="%23fff" stroke="%23fff" stroke-width=".2"/%3E%3C/svg%3E');
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $accent-color;
+  }
+  
+  .form-section__label-license {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: left;
+  
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-text-color;
+    letter-spacing: 0.01em;
+  }
+  
+  .form-section__contract {
+    color: $accent-color;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  

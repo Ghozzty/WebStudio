@@ -1,0 +1,126 @@
+.logo--white {
+    color: $body-bgc;
+  }
+  
+  .footer {
+    background-color: $foot-bgc;
+    color: $body-bgc;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .container-footer {
+    display: flex;
+    align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* address */
+  
+  .address-container {
+    margin-right: 70px;
+    flex-grow: 1;
+  }
+  
+  .footer-address-area {
+    margin-top: 20px;
+  }
+  
+  .footer-address-area__map {
+    color: $body-bgc;
+  
+    text-decoration: none;
+    font-style: normal;
+  
+    transition: color $transitionsProperty;
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    }
+  }
+  
+  .footer-address-area__item:not(:first-child) {
+    margin-top: 9px;
+  }
+
+  .footer-address-area__link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    color: $footer-contacts;
+  
+    transition: color 250ms $function-time;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+  
+  }
+  
+  /* 
+  soc-media
+  */
+  
+  .footer-social-media {
+    margin-right: 93px;
+  }
+  
+  .foot-soc-title {
+    margin-bottom: 20px;
+    display: block;
+  
+    color: $body-bgc;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  .footer-soc-link {
+    fill: $body-bgc;
+    background-color: $foot-soc-media-bgc;
+  }
+  
+  /* 
+  foot subscribe
+  */
+
+  
+  .footer-subscribe-area {
+    display: flex;
+  }
+  
+  .footer-subscribe-area__input {
+    width: 358px;
+    margin-right: 12px;
+    padding: 15px 16px;
+  
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: inherit;
+  
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    transition: border $transitionsProperty;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px solid $accent-color;
+    }
+  }
+  
+  
+  .footer-subscribe-area__icon {
+    margin-left: 10px;
+  }
+  
