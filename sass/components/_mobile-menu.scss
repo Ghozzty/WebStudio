@@ -47,9 +47,14 @@
     height: 100vh;
     left: -100%;
     top: 0;
+
+    display: flex;
+    flex-direction: column;
+
     background-color: $body-bgc;
     padding-left: 40px;
     padding-top: 48px;
+    padding-bottom: 48px;
     transition: transform $transitionsProperty;
     &.is-open{
       transform: translateX(100%);
@@ -63,7 +68,7 @@
   }
  
   .mobile-menu__list{
-    margin-bottom: 306px;
+    margin-bottom: auto;
   }
   .mobile-menu__link{
     font-weight: 500;
