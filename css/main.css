@@ -777,6 +777,20 @@ address
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-address__icon--mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-address__icon--phone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .hero {
   background-color: #c4c4c4;
   max-width: 480px;
