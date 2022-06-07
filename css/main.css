@@ -776,38 +776,38 @@ address
   margin-right: auto;
   padding: 118px 0px;
   color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../../img/hero/mob-img.jpg");
-  background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../../img/hero/mob-img.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../img/hero/mob-img.jpg");
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../img/hero/mob-img.jpg");
   background-size: cover;
   text-align: center;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../../img/hero/mob-img@2x.jpg");
-    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../../img/hero/mob-img@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../img/hero/mob-img@2x.jpg");
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../img/hero/mob-img@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../../img/hero/tablet-img.jpg");
-    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../../img/hero/tablet-img.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../img/hero/tablet-img.jpg");
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../img/hero/tablet-img.jpg");
     max-width: 768px;
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../../img/hero/tablet-img@2x.jpg");
-    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../../img/hero/tablet-img@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../img/hero/tablet-img@2x.jpg");
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../img/hero/tablet-img@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../../img/hero/desktop-img.jpg");
-    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../../img/hero/desktop-img.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../img/hero/desktop-img.jpg");
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../img/hero/desktop-img.jpg");
     padding: 200px 0px;
     max-width: 1600px;
     background-size: cover;
@@ -816,8 +816,8 @@ address
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../../img/hero/desktop-img@2x.jpg");
-    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../../img/hero/desktop-img@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url("../img/hero/desktop-img@2x.jpg");
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url("../img/hero/desktop-img@2x.jpg");
   }
 }
 
