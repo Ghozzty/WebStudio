@@ -17,44 +17,96 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="header-nav">
-          <a class="logo" href="./index.html">Web<span class="logo logo--black">Studio</span></a>
-
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./index.html">Студия</a>
+      <div class="container header__container">
+        <a class="logo" href="./index.html">Web<span class="logo logo__black">Studio</span></a>
+        <div class="nav-wraper">
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a class="header-nav__link header-nav__link--current" href="./index.html">Студия</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="header-nav__item"><a class="header-nav__link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="header-address">
+            <li class="header-address__item">
+              <a class="header-address__link" href="mailto:info@devstudio.com">
+                <svg class="header-address__icon" width="16" height="12">
+                  <use href="./img/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--current" href="./portfolio.html"
-                >Портфолио</a
+            <li class="header-address__item">
+              <a class="header-address__link" href="tel:+380961111111">
+                <svg class="header-address__icon" width="10" height="16">
+                  <use href="./img/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
-            <li class="header-nav__item"><a class="header-nav__link" href="">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="header-address">
-          <li class="header-address__item">
-            <a class="header-address__link" href="mailto:info@devstudio.com">
-              <svg class="header-address__icon-mail" width="16" height="12">
-                <use href="./img/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header-address__item">
-            <a class="header-address__link" href="tel:+380961111111">
-              <svg class="header-address__icon-phone" width="10" height="16">
-                <use href="./img/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+        <button
+          class="button-tel-menu"
+          data-menu-button
+          aria-expanded="true"
+          aria-label="Кнопка открытия меню"
+        >
+          <svg width="40" height="40">
+            <use class="icon-menu" href="./img/icons.svg#icon-menu"></use>
+            <use class="icon-close" href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu-wrapper" data-menu>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-address">
+            <li class="mobile-menu-address__item">
+              <a
+                class="mobile-menu-address__link mobile-menu-address--current"
+                href="tel:+380961111111"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-address__item">
+              <a class="mobile-menu-address__link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-social">
+            <li class="mobile-menu-social__item">
+              <a class="mobile-menu-social__link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a class="mobile-menu-social__link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a class="mobile-menu-social__link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu-social__item">
+              <a class="mobile-menu-social__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
-      <section class="main-section-portfolio">
+      <section class="section">
         <div class="container">
           <h1 class="vis-hid" lang="en">Portfolio</h1>
 
@@ -81,10 +133,14 @@
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
                   <img
-                    src="./img/portfolio-exapmles/img-1.jpg"
+                    srcset="
+                      ./img/portfolio-exapmles/img-1-354.jpg 354w,
+                      ./img/portfolio-exapmles/img-1-370.jpg 370w,
+                      ./img/portfolio-exapmles/img-1-450.jpg 450w
+                    "
+                    src="./img/portfolio-exapmles/img-1-354.jpg"
                     alt="пример работы 1"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -98,15 +154,19 @@
                 </div>
               </a>
             </li>
-            <!-- stop -->
+
             <li class="portfolio-expamles__item">
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
                   <img
-                    src="./img/portfolio-exapmles/img-2.jpg"
+                    srcset="
+                      ./img/portfolio-exapmles/img-2-354.jpg 354w,
+                      ./img/portfolio-exapmles/img-2-370.jpg 370w,
+                      ./img/portfolio-exapmles/img-2-450.jpg 450w
+                    "
+                    src="./img/portfolio-exapmles/img-2-354.jpg"
                     alt="пример работы 2"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -125,10 +185,14 @@
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
                   <img
-                    src="./img/portfolio-exapmles/img-3.jpg"
+                    srcset="
+                      ./img/portfolio-exapmles/img-3-354.jpg 354w,
+                      ./img/portfolio-exapmles/img-3-370.jpg 370w,
+                      ./img/portfolio-exapmles/img-3-450.jpg 450w
+                    "
+                    src="./img/portfolio-exapmles/img-3-354.jpg"
                     alt="пример работы 3"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -147,10 +211,14 @@
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
                   <img
-                    src="./img/portfolio-exapmles/img-4.jpg"
+                    srcset="
+                      ./img/portfolio-exapmles/img-4-354.jpg 354w,
+                      ./img/portfolio-exapmles/img-4-370.jpg 370w,
+                      ./img/portfolio-exapmles/img-4-450.jpg 450w
+                    "
+                    src="./img/portfolio-exapmles/img-4-354.jpg"
                     alt="пример работы 4"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -169,10 +237,14 @@
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
                   <img
-                    src="./img/portfolio-exapmles/img-5.jpg"
+                    srcset="
+                      ./img/portfolio-exapmles/img-5-354.jpg 354w,
+                      ./img/portfolio-exapmles/img-5-370.jpg 370w,
+                      ./img/portfolio-exapmles/img-5-450.jpg 450w
+                    "
+                    src="./img/portfolio-exapmles/img-5-354.jpg"
                     alt="пример работы 5"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -191,10 +263,14 @@
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
                   <img
-                    src="./img/portfolio-exapmles/img-6.jpg"
+                    srcset="
+                      ./img/portfolio-exapmles/img-6-354.jpg 354w,
+                      ./img/portfolio-exapmles/img-6-370.jpg 370w,
+                      ./img/portfolio-exapmles/img-6-450.jpg 450w
+                    "
+                    src="./img/portfolio-exapmles/img-6-354.jpg"
                     alt="пример работы 6"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -213,10 +289,14 @@
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
                   <img
-                    src="./img/portfolio-exapmles/img-7.jpg"
+                    srcset="
+                      ./img/portfolio-exapmles/img-7-354.jpg 354w,
+                      ./img/portfolio-exapmles/img-7-370.jpg 370w,
+                      ./img/portfolio-exapmles/img-7-450.jpg 450w
+                    "
+                    src="./img/portfolio-exapmles/img-7-354.jpg"
                     alt="пример работы 7"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -235,10 +315,14 @@
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
                   <img
-                    src="./img/portfolio-exapmles/img-8.jpg"
+                    srcset="
+                      ./img/portfolio-exapmles/img-8-354.jpg 354w,
+                      ./img/portfolio-exapmles/img-8-370.jpg 370w,
+                      ./img/portfolio-exapmles/img-8-450.jpg 450w
+                    "
+                    src="./img/portfolio-exapmles/img-8-354.jpg"
                     alt="пример работы 8"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -257,10 +341,14 @@
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
                   <img
-                    src="./img/portfolio-exapmles/img-9.jpg"
+                    srcset="
+                      ./img/portfolio-exapmles/img-9-354.jpg 354w,
+                      ./img/portfolio-exapmles/img-9-370.jpg 370w,
+                      ./img/portfolio-exapmles/img-9-450.jpg 450w
+                    "
+                    src="./img/portfolio-exapmles/img-9-354.jpg"
                     alt="пример работы 9"
-                    width="370"
-                    height="294"
+                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -280,103 +368,80 @@
     </main>
 
     <footer class="footer">
-      <div class="container-footer">
-        <div class="address-container">
-          <a class="logo" href="./index.html">Web<span class="logo logo--white">Studio</span></a>
-          <address class="footer-address-area">
-            <ul>
-              <li class="footer-address-area__item">
+      <div class="container-footer container">
+        <div class="tablet-foot-wrapper">
+          <div class="address-container">
+            <a class="logo" href="./index.html">Web<span class="logo logo--white">Studio</span></a>
+            <address class="footer-address-area">
+              <ul class="footer-address-area__list">
+                <li class="footer-address-area__item">
+                  <a
+                    class="footer-address-area__link-map"
+                    href="https://bit.ly/3pXMvUd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-address-area__item">
+                  <a class="footer-address-area__link" href="mailto:info@devstudio.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-address-area__item">
+                  <a class="footer-address-area__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-media">
+            <h5 class="foot-soc-title">присоединяйтесь</h5>
+
+            <ul class="social-media-list">
+              <li class="social-media-list__item">
                 <a
-                  class="footer-address-area__map"
-                  href="https://bit.ly/3pXMvUd"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
+                  class="social-media-list__link footer-soc-link"
+                  href=""
+                  aria-label="ссылка на социальную сеть"
                 >
+                  <svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-              <li class="footer-address-area__item">
-                <a class="footer-address-area__link" href="mailto:info@devstudio.com"
-                  >info@example.com</a
+              <li class="social-media-list__item">
+                <a
+                  class="social-media-list__link footer-soc-link"
+                  href=""
+                  aria-label="ссылка на социальную сеть"
                 >
+                  <svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-twit"></use></svg
+                ></a>
               </li>
-              <li class="footer-address-area__item">
-                <a class="footer-address-area__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="social-media-list__item">
+                <a
+                  class="social-media-list__link footer-soc-link"
+                  href=""
+                  aria-label="ссылка на социальную сеть"
+                >
+                  <svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social-media-list__item">
+                <a
+                  class="social-media-list__link footer-soc-link"
+                  href=""
+                  aria-label="ссылка на социальную сеть"
+                >
+                  <svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-social-media">
-          <h5 class="foot-soc-title">присоединяйтесь</h5>
-
-          <ul class="social-media-list">
-            <li class="social-media-list__item">
-              <a
-                class="social-media-list__link footer-soc-link"
-                href=""
-                aria-label="ссылка на социальную сеть"
-              >
-                <svg width="20" height="20">
-                  <use href="./img/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="social-media-list__item">
-              <a
-                class="social-media-list__link footer-soc-link"
-                href=""
-                aria-label="ссылка на социальную сеть"
-              >
-                <svg width="20" height="20">
-                  <use href="./img/icons.svg#icon-twit"></use></svg
-              ></a>
-            </li>
-            <li class="social-media-list__item">
-              <a
-                class="social-media-list__link footer-soc-link"
-                href=""
-                aria-label="ссылка на социальную сеть"
-              >
-                <svg width="20" height="20">
-                  <use href="./img/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="social-media-list__item">
-              <a
-                class="social-media-list__link footer-soc-link"
-                href=""
-                aria-label="ссылка на социальную сеть"
-              >
-                <svg width="20" height="20">
-                  <use href="./img/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-
-          <!-- <ul class="social-media-list">
-            <li class="item">
-              <a class="our-social-media" href="" aria-label="ссылка на социальную сеть">
-                <svg width="20" height="20">
-                  <use href="./img/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="item">
-              <a class="our-social-media" href="" aria-label="ссылка на социальную сеть">
-                <svg width="20" height="20">
-                  <use href="./img/icons.svg#icon-twit"></use></svg
-              ></a>
-            </li>
-            <li class="item">
-              <a class="our-social-media" href="" aria-label="ссылка на социальную сеть">
-                <svg width="20" height="20">
-                  <use href="./img/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="item">
-              <a class="our-social-media" href="" aria-label="ссылка на социальную сеть">
-                <svg width="20" height="20">
-                  <use href="./img/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul> -->
+          </div>
         </div>
         <div class="footer-subscribe">
           <form autocomplete="on">
@@ -389,7 +454,7 @@
                 id="user_email"
                 placeholder="E-mail"
               />
-              <button class="main-button" type="submit">
+              <button class="main-button foot-but" type="submit">
                 Подписаться<svg class="footer-subscribe-area__icon" width="24" height="24">
                   <use href="./img/icons.svg#icon-icon-send"></use>
                 </svg>
@@ -399,5 +464,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
