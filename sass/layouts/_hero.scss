@@ -6,7 +6,7 @@
     padding: 118px 0px;
     color: $body-bgc;
     background-image: linear-gradient((to right, $hero-overlay), $hero-overlay),
-    url('../../img/hero/mob-img.jpg');
+    url('../img/hero/mob-img.jpg');
     background-size: cover;
     text-align: center;
   
@@ -15,20 +15,20 @@
     (min-resolution: 2dppx) {
     & {
       background-image: linear-gradient((to right, $hero-overlay), $hero-overlay),
-    url('../../img/hero/mob-img@2x.jpg');
+    url('../img/hero/mob-img@2x.jpg');
     }
   }
       //  768
 
     @media screen and (min-width: 768px) {
       background-image: linear-gradient((to right, $hero-overlay), $hero-overlay),
-    url('../../img/hero/tablet-img.jpg');
+    url('../img/hero/tablet-img.jpg');
     max-width: 768px;
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
     & {
       background-image: linear-gradient((to right, $hero-overlay), $hero-overlay),
-    url('../../img/hero/tablet-img@2x.jpg');
+    url('../img/hero/tablet-img@2x.jpg');
     }
   }
     }
@@ -36,7 +36,7 @@
 
     @media screen and (min-width: 1200px) {
       background-image: linear-gradient((to right, $hero-overlay), $hero-overlay),
-      url('../../img/hero/desktop-img.jpg');
+      url('../img/hero/desktop-img.jpg');
       padding: 200px 0px;
       max-width: 1600px;
       background-size: cover;
@@ -45,7 +45,7 @@
     (min-resolution: 2dppx) {
     & {
       background-image: linear-gradient((to right, $hero-overlay), $hero-overlay),
-    url('../../img/hero/desktop-img@2x.jpg');
+    url('../img/hero/desktop-img@2x.jpg');
     }
   }
     }
