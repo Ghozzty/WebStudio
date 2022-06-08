@@ -21,41 +21,37 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html">Web<span class="logo logo__black">Studio</span></a>
-        <div class="nav-wraper">
-          <nav class="header-nav">
-            <ul class="header-nav__list">
-              <li class="header-nav__item">
-                <a class="header-nav__link header-nav__link--current" href="./index.html">Студия</a>
-              </li>
-              <li class="header-nav__item">
-                <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="header-nav__item"><a class="header-nav__link" href="">Контакты</a></li>
-            </ul>
-          </nav>
-          <ul class="header-address">
-            <li class="header-address__item">
-              <a class="header-address__link" href="mailto:info@devstudio.com">
-                <svg class="header-address__icon header-address__icon--mail" width="16" height="12">
-                  <use href="./img/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
+
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link--current" href="./index.html">Студия</a>
             </li>
-            <li class="header-address__item">
-              <a class="header-address__link" href="tel:+380961111111">
-                <svg
-                  class="header-address__icon header-address__icon--phone"
-                  width="10"
-                  height="16"
-                >
-                  <use href="./img/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
+            <li class="header-nav__item"><a class="header-nav__link" href="">Контакты</a></li>
           </ul>
-        </div>
+        </nav>
+        <ul class="header-address">
+          <li class="header-address__item">
+            <a class="header-address__link" href="mailto:info@devstudio.com">
+              <svg class="header-address__icon header-address__icon--mail" width="16" height="12">
+                <use href="./img/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header-address__item">
+            <a class="header-address__link" href="tel:+380961111111">
+              <svg class="header-address__icon header-address__icon--phone" width="10" height="16">
+                <use href="./img/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
         <button
           class="button-tel-menu"
           data-menu-button
@@ -71,7 +67,7 @@
         <div class="mobile-menu-wrapper" data-menu>
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="./index.html">Студия</a>
+              <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студия</a>
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
@@ -117,12 +113,13 @@
       <!-- hero -->
 
       <section class="hero">
-        <h1 class="hero__title">
-          Эффективные решения<br />
-          для вашего бизнеса
-        </h1>
-        <button class="main-button" type="button" data-modal-open>Заказать услугу</button>
-
+        <div class="container">
+          <h1 class="hero__title">
+            Эффективные решения<br />
+            для вашего бизнеса
+          </h1>
+          <button class="main-button" type="button" data-modal-open>Заказать услугу</button>
+        </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="modal__button-close" data-modal-close>
@@ -288,16 +285,23 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="our-team-list">
             <li class="our-team-list__item">
-              <img
-                srcset="
-                  ./img/our-team/mmbr-1-270.jpg 270w,
-                  ./img/our-team/mmbr-1-354.jpg 354w,
-                  ./img/our-team/mmbr-1-450.jpg 450w
-                "
-                alt="фотография члена команды 1"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-                src="./img/our-team/mmbr-1-270.jpg"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/our-team/mmbr-1-270.jpg 1x, ./img/our-team/mmbr-1-270@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/our-team/mmbr-1-354.jpg 1x, ./img/our-team/mmbr-1-354@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./img/our-team/mmbr-1-450.jpg 1x, ./img/our-team/mmbr-1-450@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img alt="фотография члена команды 1" src="./img/our-team/mmbr-1-270.jpg" />
+              </picture>
               <div class="our-team-list__card">
                 <h3 class="our-team-list__title">Игорь Демьяненко</h3>
                 <p class="our-team-list__text">Product Designer</p>
@@ -346,16 +350,23 @@
               </div>
             </li>
             <li class="our-team-list__item">
-              <img
-                srcset="
-                  ./img/our-team/mmbr-2-270.jpg 270w,
-                  ./img/our-team/mmbr-2-354.jpg 354w,
-                  ./img/our-team/mmbr-2-450.jpg 450w
-                "
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-                src="./img/our-team/mmbr-2-270.jpg"
-                alt="фотография члена команды 2"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/our-team/mmbr-2-270.jpg 1x, ./img/our-team/mmbr-2-270@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/our-team/mmbr-2-354.jpg 1x, ./img/our-team/mmbr-2-354@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./img/our-team/mmbr-2-450.jpg 1x, ./img/our-team/mmbr-2-450@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img alt="фотография члена команды 2" src="./img/our-team/mmbr-2-270.jpg" />
+              </picture>
               <div class="our-team-list__card">
                 <h3 class="our-team-list__title">Ольга Репина</h3>
                 <p class="our-team-list__text">Frontend Developer</p>
@@ -404,16 +415,23 @@
               </div>
             </li>
             <li class="our-team-list__item">
-              <img
-                srcset="
-                  ./img/our-team/mmbr-3-270.jpg 270w,
-                  ./img/our-team/mmbr-3-354.jpg 354w,
-                  ./img/our-team/mmbr-3-450.jpg 450w
-                "
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-                src="./img/our-team/mmbr-3-270.jpg"
-                alt="фотография члена команды 3"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/our-team/mmbr-3-270.jpg 1x, ./img/our-team/mmbr-3-270@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/our-team/mmbr-3-354.jpg 1x, ./img/our-team/mmbr-3-354@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./img/our-team/mmbr-3-450.jpg 1x, ./img/our-team/mmbr-3-450@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img alt="фотография члена команды 3" src="./img/our-team/mmbr-3-270.jpg" />
+              </picture>
               <div class="our-team-list__card">
                 <h3 class="our-team-list__title">Николай Тарасов</h3>
                 <p class="our-team-list__text">Marketing</p>
@@ -462,16 +480,23 @@
               </div>
             </li>
             <li class="our-team-list__item">
-              <img
-                srcset="
-                  ./img/our-team/mmbr-4-270.jpg 270w,
-                  ./img/our-team/mmbr-4-354.jpg 354w,
-                  ./img/our-team/mmbr-4-450.jpg 450w
-                "
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-                src="./img/our-team/mmbr-4-270.jpg"
-                alt="фотография члена команды 4"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/our-team/mmbr-4-270.jpg 1x, ./img/our-team/mmbr-4-270@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/our-team/mmbr-4-354.jpg 1x, ./img/our-team/mmbr-4-354@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="./img/our-team/mmbr-4-450.jpg 1x, ./img/our-team/mmbr-4-450@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img alt="фотография члена команды 4" src="./img/our-team/mmbr-4-270.jpg" />
+              </picture>
               <div class="our-team-list__card">
                 <h3 class="our-team-list__title">Михаил Ермаков</h3>
                 <p class="our-team-list__text">UI Designer</p>

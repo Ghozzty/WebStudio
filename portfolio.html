@@ -69,7 +69,9 @@
               <a class="mobile-menu__link" href="./index.html">Студия</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+              <a class="mobile-menu__link mobile-menu__link--current" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link" href="">Контакты</a>
@@ -134,16 +136,34 @@
             <li class="portfolio-expamles__item">
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
-                  <img
-                    srcset="
-                      ./img/portfolio-exapmles/img-1-354.jpg 354w,
-                      ./img/portfolio-exapmles/img-1-370.jpg 370w,
-                      ./img/portfolio-exapmles/img-1-450.jpg 450w
-                    "
-                    src="./img/portfolio-exapmles/img-1-354.jpg"
-                    alt="пример работы 1"
-                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-1-370.jpg     1x,
+                        ./img/portfolio-exapmles/img-1-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-1-354.jpg     1x,
+                        ./img/portfolio-exapmles/img-1-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-1-450.jpg     1x,
+                        ./img/portfolio-exapmles/img-1-450@2x.jpg 2x
+                      "
+                      media=""
+                      type="image/jpeg"
+                    />
+
+                    <img src="./img/portfolio-exapmles/img-1-370.jpg" alt="пример работы 1" />
+                  </picture>
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -160,16 +180,34 @@
             <li class="portfolio-expamles__item">
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
-                  <img
-                    srcset="
-                      ./img/portfolio-exapmles/img-2-354.jpg 354w,
-                      ./img/portfolio-exapmles/img-2-370.jpg 370w,
-                      ./img/portfolio-exapmles/img-2-450.jpg 450w
-                    "
-                    src="./img/portfolio-exapmles/img-2-354.jpg"
-                    alt="пример работы 2"
-                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-2-370.jpg     1x,
+                        ./img/portfolio-exapmles/img-2-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-2-354.jpg     1x,
+                        ./img/portfolio-exapmles/img-2-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-2-450.jpg     1x,
+                        ./img/portfolio-exapmles/img-2-450@2x.jpg 2x
+                      "
+                      media=""
+                      type="image/jpeg"
+                    />
+
+                    <img src="./img/portfolio-exapmles/img-2-370.jpg" alt="пример работы 2" />
+                  </picture>
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -186,16 +224,34 @@
             <li class="portfolio-expamles__item">
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
-                  <img
-                    srcset="
-                      ./img/portfolio-exapmles/img-3-354.jpg 354w,
-                      ./img/portfolio-exapmles/img-3-370.jpg 370w,
-                      ./img/portfolio-exapmles/img-3-450.jpg 450w
-                    "
-                    src="./img/portfolio-exapmles/img-3-354.jpg"
-                    alt="пример работы 3"
-                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-3-370.jpg     1x,
+                        ./img/portfolio-exapmles/img-3-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-3-354.jpg     1x,
+                        ./img/portfolio-exapmles/img-3-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-3-450.jpg     1x,
+                        ./img/portfolio-exapmles/img-3-450@2x.jpg 2x
+                      "
+                      media=""
+                      type="image/jpeg"
+                    />
+
+                    <img src="./img/portfolio-exapmles/img-3-370.jpg" alt="пример работы 3" />
+                  </picture>
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -212,16 +268,34 @@
             <li class="portfolio-expamles__item">
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
-                  <img
-                    srcset="
-                      ./img/portfolio-exapmles/img-4-354.jpg 354w,
-                      ./img/portfolio-exapmles/img-4-370.jpg 370w,
-                      ./img/portfolio-exapmles/img-4-450.jpg 450w
-                    "
-                    src="./img/portfolio-exapmles/img-4-354.jpg"
-                    alt="пример работы 4"
-                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-4-370.jpg     1x,
+                        ./img/portfolio-exapmles/img-4-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-4-354.jpg     1x,
+                        ./img/portfolio-exapmles/img-4-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-4-450.jpg     1x,
+                        ./img/portfolio-exapmles/img-4-450@2x.jpg 2x
+                      "
+                      media=""
+                      type="image/jpeg"
+                    />
+
+                    <img src="./img/portfolio-exapmles/img-4-370.jpg" alt="пример работы 4" />
+                  </picture>
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -238,16 +312,34 @@
             <li class="portfolio-expamles__item">
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
-                  <img
-                    srcset="
-                      ./img/portfolio-exapmles/img-5-354.jpg 354w,
-                      ./img/portfolio-exapmles/img-5-370.jpg 370w,
-                      ./img/portfolio-exapmles/img-5-450.jpg 450w
-                    "
-                    src="./img/portfolio-exapmles/img-5-354.jpg"
-                    alt="пример работы 5"
-                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-5-370.jpg     1x,
+                        ./img/portfolio-exapmles/img-5-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-5-354.jpg     1x,
+                        ./img/portfolio-exapmles/img-5-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-5-450.jpg     1x,
+                        ./img/portfolio-exapmles/img-5-450@2x.jpg 2x
+                      "
+                      media=""
+                      type="image/jpeg"
+                    />
+
+                    <img src="./img/portfolio-exapmles/img-5-370.jpg" alt="пример работы 5" />
+                  </picture>
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -264,16 +356,34 @@
             <li class="portfolio-expamles__item">
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
-                  <img
-                    srcset="
-                      ./img/portfolio-exapmles/img-6-354.jpg 354w,
-                      ./img/portfolio-exapmles/img-6-370.jpg 370w,
-                      ./img/portfolio-exapmles/img-6-450.jpg 450w
-                    "
-                    src="./img/portfolio-exapmles/img-6-354.jpg"
-                    alt="пример работы 6"
-                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-6-370.jpg     1x,
+                        ./img/portfolio-exapmles/img-6-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-6-354.jpg     1x,
+                        ./img/portfolio-exapmles/img-6-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-6-450.jpg     1x,
+                        ./img/portfolio-exapmles/img-6-450@2x.jpg 2x
+                      "
+                      media=""
+                      type="image/jpeg"
+                    />
+
+                    <img src="./img/portfolio-exapmles/img-6-370.jpg" alt="пример работы 6" />
+                  </picture>
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -290,16 +400,34 @@
             <li class="portfolio-expamles__item">
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
-                  <img
-                    srcset="
-                      ./img/portfolio-exapmles/img-7-354.jpg 354w,
-                      ./img/portfolio-exapmles/img-7-370.jpg 370w,
-                      ./img/portfolio-exapmles/img-7-450.jpg 450w
-                    "
-                    src="./img/portfolio-exapmles/img-7-354.jpg"
-                    alt="пример работы 7"
-                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-7-370.jpg     1x,
+                        ./img/portfolio-exapmles/img-7-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-7-354.jpg     1x,
+                        ./img/portfolio-exapmles/img-7-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-7-450.jpg     1x,
+                        ./img/portfolio-exapmles/img-7-450@2x.jpg 2x
+                      "
+                      media=""
+                      type="image/jpeg"
+                    />
+
+                    <img src="./img/portfolio-exapmles/img-7-370.jpg" alt="пример работы 7" />
+                  </picture>
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -316,16 +444,34 @@
             <li class="portfolio-expamles__item">
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
-                  <img
-                    srcset="
-                      ./img/portfolio-exapmles/img-8-354.jpg 354w,
-                      ./img/portfolio-exapmles/img-8-370.jpg 370w,
-                      ./img/portfolio-exapmles/img-8-450.jpg 450w
-                    "
-                    src="./img/portfolio-exapmles/img-8-354.jpg"
-                    alt="пример работы 8"
-                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-8-370.jpg     1x,
+                        ./img/portfolio-exapmles/img-8-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-8-354.jpg     1x,
+                        ./img/portfolio-exapmles/img-8-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-8-450.jpg     1x,
+                        ./img/portfolio-exapmles/img-8-450@2x.jpg 2x
+                      "
+                      media=""
+                      type="image/jpeg"
+                    />
+
+                    <img src="./img/portfolio-exapmles/img-8-370.jpg" alt="пример работы 8" />
+                  </picture>
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -342,16 +488,34 @@
             <li class="portfolio-expamles__item">
               <a class="portfolio-expamles__link" href="">
                 <div class="portfolio-expamles__upper-area">
-                  <img
-                    srcset="
-                      ./img/portfolio-exapmles/img-9-354.jpg 354w,
-                      ./img/portfolio-exapmles/img-9-370.jpg 370w,
-                      ./img/portfolio-exapmles/img-9-450.jpg 450w
-                    "
-                    src="./img/portfolio-exapmles/img-9-354.jpg"
-                    alt="пример работы 9"
-                    sizes="(min-width: 1200px) 33.333vw, (min-width: 768px) 50vw, 100vw"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-9-370.jpg     1x,
+                        ./img/portfolio-exapmles/img-9-370@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-9-354.jpg     1x,
+                        ./img/portfolio-exapmles/img-9-354@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        /img/portfolio-exapmles/img-9-450.jpg     1x,
+                        ./img/portfolio-exapmles/img-9-450@2x.jpg 2x
+                      "
+                      media=""
+                      type="image/jpeg"
+                    />
+
+                    <img src="./img/portfolio-exapmles/img-9-370.jpg" alt="пример работы 9" />
+                  </picture>
                   <p class="portfolio-expamles__blue-card">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании

@@ -66,7 +66,7 @@
      
    }
   }
- 
+//  list
   .mobile-menu__list{
     margin-bottom: auto;
   }
@@ -90,7 +90,17 @@
   .mobile-menu__item:not(:last-child){
     margin-bottom: 32px;
   }
+
+  .mobile-menu__link--current{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
   
+// address
+
   .mobile-menu-address{
     margin-bottom: 64px;
   }
@@ -104,8 +114,8 @@
     text-decoration: none;
   
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
    
     transition: color $transitionsProperty;
@@ -125,8 +135,9 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $accent-color;
-    
   }
+
+  
   // mob-social
   .mobile-menu-social{
     display: inline-flex;

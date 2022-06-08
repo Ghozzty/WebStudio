@@ -63,11 +63,11 @@
   /* grid  */
   
   .portfolio-expamles {
+ 
+    @media screen and (min-width:768px){
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    @media screen and (max-width:767px){
-      justify-content: center;
     }
   }
   .portfolio-expamles__item {
