@@ -7,29 +7,23 @@
   @media screen and (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
   @media screen and (min-width:1200px){
     flex-wrap: nowrap;
+    margin: 0;
   }
 }
 
 .our-team-list__item {
-  flex-basis: calc((100% - 30px) / 2);
-  &:not(:last-child){
-  margin-bottom: 30px;
+  @media screen and (max-width:767px) {
+    margin-bottom: 30px;
   }
-
- @media screen and (min-width:768px) {
   
-
-  &:nth-child(odd){
-    margin-right: 30px;
-  } 
-
-  &:nth-child(3),
-  &:nth-child(4){
-    margin-bottom: 0;
-  }
+  
+ @media screen and (min-width:768px) and (max-width:1199px) {
+  flex-basis: calc((100% - 60px) / 2);
+  margin: 15px;
  }
 
  @media screen and (min-width:1200px) {

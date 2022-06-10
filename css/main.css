@@ -1024,6 +1024,7 @@ address
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -1031,12 +1032,11 @@ address
   .our-team-list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin: 0;
   }
 }
 
 .our-team-list__item {
-  -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
   background-color: #ffffff;
   text-align: center;
   -webkit-box-align: center;
@@ -1047,16 +1047,17 @@ address
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-list__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .our-team-list__item {
+    margin-bottom: 30px;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .our-team-list__item:nth-child(odd) {
-    margin-right: 30px;
-  }
-  .our-team-list__item:nth-child(3), .our-team-list__item:nth-child(4) {
-    margin-bottom: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team-list__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 
